@@ -1,5 +1,5 @@
 :root {
-    --cor-do-texto: darkblue;
+    --cor-do-texto: gray;
     --cor-da-borda: #fff;
 }
 
@@ -25,11 +25,14 @@ h1 {
 }
 
 main img {
+    margin-left: 20px;
+    margin-bottom: 20px;
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -42,12 +45,10 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid var(--cor-da-borda);
-    padding: 2px;
-    background-color: var(--cor-do-texto);
+
     color: var(--cor-da-borda);
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -55,8 +56,27 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 40px;
+    left: 130px;
+
+}
+
 footer {
     margin-top: 15px;
     border-top: 2px solid #000;
     text-align: center;
+}
+
+/* Seletores de Classe */
+.caixa {
+    border: 1px solid var(--cor-da-borda);
+    margin: 1rem;
+    padding: 2px;
+    background-color: var(--cor-do-texto);
+}
+
+.indentacao {
+    padding-left: 2rem;
 }
