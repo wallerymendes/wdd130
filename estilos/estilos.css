@@ -1,3 +1,8 @@
+:root {
+    --cor-do-texto: darkblue;
+    --cor-da-borda: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,18 +10,18 @@
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--cor-do-texto);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--cor-da-borda);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--cor-do-texto);
 }
 
 main img {
@@ -38,10 +43,10 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid #fff;
+    border: 1px solid var(--cor-da-borda);
     padding: 2px;
-    background-color: navy;
-    color: #fff;
+    background-color: var(--cor-do-texto);
+    color: var(--cor-da-borda);
     text-align: center;
 }
 
