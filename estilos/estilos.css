@@ -12,16 +12,21 @@
 nav {
     background-color: var(--cor-do-texto);
     padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 nav a {
     color: var(--cor-da-borda);
     display: block;
     padding: 20px;
+    text-decoration: none;
 }
 
 h1 {
     color: var(--cor-do-texto);
+    border-bottom: 1px solid blueviolet;
 }
 
 main img {
@@ -39,9 +44,7 @@ p {
     padding: 0;
 }
 
-main {
-    max-width: 800px;
-}
+main {}
 
 aside {
     width: 20rem;
@@ -79,4 +82,22 @@ footer {
 
 .indentacao {
     padding-left: 2rem;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid aside {
+    grid-row: 1;
+}
+
+header,
+footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
+
 }
