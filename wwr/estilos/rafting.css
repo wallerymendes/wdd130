@@ -4,7 +4,7 @@
     --cor-destaque2: #F27E7E;
     --fonte-titulo: "Times New Roman";
     --cor-primaria: #8e1813;
-    --cor-secundaria: gray;
+    --cor-secundaria: black;
 
 }
 
@@ -16,7 +16,7 @@
 
 body {
     font-family: var(--fonte-body);
-    color: var(--cor-destaque1);
+    color: var(--cor-primaria);
 }
 
 header {
