@@ -1,6 +1,5 @@
 :root {
     --fonte-body: "Arial";
-    --cor-destaque1: #e6a41c;
     --cor-destaque2: #F27E7E;
     --fonte-titulo: "Times New Roman";
     --cor-primaria: #8e1813;
@@ -16,7 +15,7 @@
 
 body {
     font-family: var(--fonte-body);
-    color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 header {
