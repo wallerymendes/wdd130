@@ -19,6 +19,14 @@ body {
     color: var(--cor-destaque1);
 }
 
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 10px;
+
+}
+
 header,
 main,
 footer {
@@ -32,6 +40,19 @@ h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-secundaria);
     text-align-last: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 16px 0;
+    padding: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    flex: 1 1 auto;
 }
 
 nav,
@@ -97,4 +118,85 @@ h1 {
     height: auto;
     margin-left: 15px;
     border: 1px solid #fff;
+}
+
+.historia-conteudo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.historia h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.historia-conteudo p:nth-of-type(1) {
+    order: 1;
+}
+
+.historia-conteudo p:nth-of-type(2) {
+    order: 3;
+}
+
+.historia-conteudo img {
+    display: grid;
+    order: 2;
+    width: 200px;
+    display: block;
+    place-self: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.galeria figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.galeria img {
+    width: 100px;
+    background-color: #e0e0e0;
+}
+
+.galeria figcaption {
+    display: flex;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 840px;
+
+}
+
+footer p {
+    grid-column: 2;
+    text-align: center;
+    margin: 0;
+}
+
+footer .redes-sociais {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+
+}
+
+footer .redes-sociais img {
+    width: 25px;
+    height: 25px;
+    display: block;
 }
