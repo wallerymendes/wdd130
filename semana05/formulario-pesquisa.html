@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+    <link rel="stylesheet" href="estilos/formulario-pesquisa.css">
+</head>
+
+<body>
+    <header>
+
+    <h1>WDD 130|Formulário HTML - Pesquisa de Usuário</h1>        
+    </header>
+
+    <main>
+        <form>
+            <fieldset>  
+                <legend>Informações de Contato</legend>
+                <div class="item-formulario coluna2">
+                    <label for="nome-completo"> Nome Completo:</label>
+                    <input type="text" id="nome-completo" name="nome-completo" required>
+                </div>
+                <div class="item-formulario coluna2">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="emaildousuario" name="emaildousuario" required>
+                </div>
+            </fieldset>  
+
+            <fieldset>
+                <legend>Perguntas</legend>
+                <div class="item-formulario coluna1">
+                    <label for="navegador">Qual o seu navegador favorito?</label>
+                    <select name="navegador" id="navegador">
+                        <option value="chrome">Chrome</option>
+                        <option value="Safari">Safari</option>
+                        <option value="Edge">Edge</option>
+                        <option value="Brave">Brave</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Outro">Outro</option>
+                </div>    
+                </select>
+                <div class="item-formulario coluna1">
+                    <label for="pet">Você tem um bichinho de estimação em casa?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <label for="feedback">Liste os lugares que você já morou</label>
+                <textarea id="feedback" name="feedback" rows="5" placeholder="Maceió, Itapecerica da Serra, Ipatinga, Sete Lagoas"></textarea>
+            </fieldset>
+            <button type="submit">Enviar Pesquisa</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>©️2026 |Formulário HTML - Atividade de Pesquisa do Usuário | Wallery Mendes </p>
+    </footer>
+</body>
+
+</html>
