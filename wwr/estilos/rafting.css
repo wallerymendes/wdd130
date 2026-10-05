@@ -191,3 +191,98 @@ footer .redes-sociais img {
     height: 25px;
     display: block;
 }
+
+
+.container-mapa-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    padding: 20px;
+}
+
+
+fieldset{
+    display: grid;
+    grid-gap: .5rem;
+    border: none;
+}
+
+.item-formulario{
+  display: flex;
+  align-items: flex-start;
+  min-width: 100px;
+  gap: 15px;
+}
+
+.coluna1 {
+  grid-template-columns: 1fr 2fr;
+  margin: 0.5rem 0;
+}
+
+.coluna2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+
+.container-radio-opcoes{
+    display: flex; 
+    flex-direction: column; 
+    gap: 8px;
+}
+
+
+.contato h1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin:0;
+}
+
+.contato p{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    margin:0;
+
+}
+.galeria-contatos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.galeria-contatos img{
+width: 100px;
+
+
+}
+
+.galeria-contatos figure{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+.galeria-contatos figcaption{
+    display: flex;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+section.equipe-cargo{
+    padding: 10px;
+}
+
+button {
+  margin: 1rem;
+  background-color: gainsboro;
+  border: gray;
+  border-radius: .5rem;
+  padding: .60rem;
+  font-size: 1rem;
+  justify-self: center;
+   width: 100%;
+}
