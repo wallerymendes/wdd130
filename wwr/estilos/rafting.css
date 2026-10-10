@@ -192,97 +192,227 @@ footer .redes-sociais img {
     display: block;
 }
 
-
-.container-mapa-form{
+.container-mapa-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     flex-direction: row;
     padding: 20px;
 }
 
-
-fieldset{
+fieldset {
     display: grid;
     grid-gap: .5rem;
     border: none;
 }
 
-.item-formulario{
-  display: flex;
-  align-items: flex-start;
-  min-width: 100px;
-  gap: 15px;
+.item-formulario {
+    display: flex;
+    align-items: flex-start;
+    min-width: 100px;
+    gap: 15px;
 }
 
 .coluna1 {
-  grid-template-columns: 1fr 2fr;
-  margin: 0.5rem 0;
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
 }
 
 .coluna2 {
-  grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
 }
 
-
-.container-radio-opcoes{
-    display: flex; 
-    flex-direction: column; 
+.container-radio-opcoes {
+    display: flex;
+    flex-direction: column;
     gap: 8px;
 }
 
-
-.contato h1{
+.contato h1 {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
-    margin:0;
+    margin: 0;
 }
 
-.contato p{
+.contato p {
     font-size: 15px;
     text-align: center;
     font-weight: 700;
-    margin:0;
+    margin: 0;
 
 }
+
 .galeria-contatos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-.galeria-contatos img{
-width: 100px;
-
+.galeria-contatos img {
+    width: 100px;
 
 }
 
-.galeria-contatos figure{
-     display: flex;
+.galeria-contatos figure {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 0;
     padding: 10px;
 }
-.galeria-contatos figcaption{
+
+.galeria-contatos figcaption {
     display: flex;
     margin-top: 8px;
     font-size: 0.9rem;
     color: #333;
 }
 
-section.equipe-cargo{
+section.equipe-cargo {
     padding: 10px;
 }
 
 button {
-  margin: 1rem;
-  background-color: gainsboro;
-  border: gray;
-  border-radius: .5rem;
-  padding: .60rem;
-  font-size: 1rem;
-  justify-self: center;
-   width: 100%;
+    margin: 1rem;
+    background-color: gainsboro;
+    border: gray;
+    border-radius: .5rem;
+    padding: .60rem;
+    font-size: 1rem;
+    justify-self: center;
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.conteudo-index {
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    width: 55%;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    font-family: var(--fonte-body);
+}
+
+.conteudo-index h1 {
+    font-size: 45px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.conteudo-index p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+}
+
+.galeria-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: var(--fonte-body);
+
+}
+
+.galeria-index {
+    position: relative;
+}
+
+.botao-galeria {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    z-index: 2;
+}
+
+.botao-galeria button {
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.imagem-fundo {
+    width: 250px;
+    position: absolute;
+    left: 150px;
+    top: 60px;
+}
+
+.imagem-frente {
+    width: 250px;
+    position: relative;
+    top: 170px;
+}
+
+.chamada-acao button {
+    display: flex;
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+    padding: 12px 20px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+}
+
+.newsletter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: darkgoldenrod;
+    padding: 15px;
+}
+
+.newsletter fieldset {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.newsletter .item-formulario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.newsletter button {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: 2px solid var(--cor-primaria);
+    margin-bottom: 15px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    width: 70px;
+    font-size: 12px;
+    align-self: flex-end;
+}
+
+.newsletter legend {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 }
