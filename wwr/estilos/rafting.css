@@ -416,3 +416,86 @@ button {
     font-weight: bold;
     text-align: center;
 }
+
+.passeios-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+}
+
+.passeios-container img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.passeios-container h2 {
+    font-size: 15px;
+    font-family: var(--fonte-body);
+    text-align: center;
+}
+
+.passeios-container p {
+    font-size: 15px;
+    font-family: var(--fonte-body);
+    text-align: left;
+
+}
+
+.passeios-container h3 {
+    font-size: 10px;
+    font-family: var(--fonte-body);
+    text-align: center;
+}
+
+.passeio-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.tabela-passeios h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: var(--fonte-body);
+}
+
+.tabela-passeios table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.informacao-passeios button {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: 2px solid var(--cor-primaria);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 15px;
+    align-self: flex-end;
+}
